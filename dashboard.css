@@ -1,0 +1,388 @@
+/* Top Bar */
+.top-bar {
+  background: #000;
+  color: #fff;
+  padding: 6px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #f2f2f2;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #000;
+    color: #fff;
+}
+
+.product-container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-top: 40px;
+}
+
+.product-card{
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.product-card img{
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: #0077ff;
+}
+
+.buttons{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cartBtn{
+    padding: 6px 14px;
+    background: #0077ff;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.wishBtn{
+    padding: 6px 10px;
+    border: 2px solid #ff2727;
+    background: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.top-bar a { color: #fff; text-decoration: none; }
+
+/* Header Main */
+.main-header {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-section img {
+  height: 45px;
+}
+.logo-section h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Search Bar */
+.search-box {
+  display: flex;
+  width: 45%;
+}
+.search-box input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+.search-box button {
+  background: #ff4d4d;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Cart */
+.cart-section {
+  position: relative;
+  cursor: pointer;
+}
+.cart-section i {
+  color: #fff;
+  font-size: 24px;
+}
+#cartCount {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: red;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* Navigation */
+.nav-bar {
+  background: #111;
+  text-align: center;
+  padding: 10px 0;
+}
+.nav-bar a {
+  color: #fff;
+  margin: 0 20px;
+  font-size: 15px;
+  text-decoration: none;
+}
+.nav-bar a:hover {
+  color: #ff4d4d;
+}
+/* === PRODUCT GRID CONTAINER STYLES (Crucial Fix) === */
+.product-grid-container {
+    padding: 40px 20px;
+    /* Use flexbox for simple layout if only displaying one card, or a constrained grid */
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    align-items: flex-start; /* Align cards to the top */
+    flex-wrap: wrap; /* Allows multiple cards to wrap if you add more */
+    gap: 25px;
+    /* Max width controls how wide the *entire row* of cards can be */
+    max-width: 1200px; 
+    width: 100%; /* Important: Takes up available space */
+    margin: 20px auto; 
+}
+
+/* === PRODUCT CARD STYLES (Crucial Fix: Limiting the width) === */
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px; /* Increased padding for better look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* FIX: Set a defined, reasonable maximum width for a single card */
+    max-width: 400px; 
+    width: 100%; /* Makes it responsive within the max-width */
+    
+    /* Ensure only one card doesn't stretch */
+    flex-grow: 0; 
+    flex-shrink: 1;
+}
+
+.product-card:hover {
+    transform: none; /* Removed lift effect for a simpler look like the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 70%; /* Smaller image for a compact look */
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 5px;
+}
+.product-description {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 25px;
+    height: auto; /* Allow description to take natural height */
+}
+
+.product-price {
+    font-size: 2em; /* Larger price */
+    color: #007aff; /* Changed price color to blue like your image */
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.add-to-cart-btn {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px; /* Square button like the image */
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: normal;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Space between buttons */
+}
+
+.add-to-cart-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Style for the wishlist heart button */
+.product-card button:last-child { 
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #ff3b30; 
+    padding: 10px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* --- */
+
+/* MOBILE RESPONSIVENESS (Optional but good practice) */
+@media (max-width: 600px) {
+    .main-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar {
+        padding: 10px 0;
+    }
+    .product-card {
+        padding: 20px;
+        margin: 0 auto; /* Center the card on mobile */
+    }
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif;}
+
+header{
+    background:#000;color:#fff;padding:15px 40px;
+    display:flex;justify-content:space-between;align-items:center;
+}
+.cart-icon{color:#fff;text-decoration:none;font-size:20px;}
+.cart-icon span{
+    background:red;color:#fff;padding:2px 6px;border-radius:50%;font-size:14px;
+}
+
+.product-container{
+    width:90%;margin:auto;
+    display:grid;grid-template-columns:repeat(3,1fr);
+    gap:25px;padding-top:40px;
+}
+.product-card{
+    background:#fff;padding:18px;text-align:center;border-radius:10px;
+}
+.product-card img{width:150px;}
+.cartBtn{
+    background:#0077ff;border:none;color:#fff;padding:7px 15px;
+    border-radius:5px;cursor:pointer;margin-top:10px;
+}
+.product-card {
+    background: #fff;
+    width: 230px;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    transition: 0.3s;
+    text-align: center;
+    margin: 15px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.product-card h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product-card .price {
+    color: #007bff;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 6px 0 12px;
+}
+
+.add-btn {
+    width: 100%;
+    background: #007bff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #005ad5;
+}
+
+.product-container {
+  width: 150%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Cards Center */
+  gap: 25px; /* Space Between Cards */
+  padding: 50px 10px;
+}
+.product-card {
+  width: 300px; /* Fix card size */
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  transition: 0.3s;
+
+}
+
+.cart-badge {
+  background: #ff3b3b;      /* red background */
+  padding: 6px 18px;        /* spacing */
+  border-radius: 25px;      /* rounded shape */
+  color: #fff;              /* white text */
+  font-weight: 600;
+  text-decoration: none;    /* remove underline */
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;                 /* space between icon and text */
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.cart-badge:hover {
+  background: #d62727;      /* slight dark hover */
+  transform: scale(1.05);   /* hover effect */
+}
+
+#cart-count {
+  color: #fff;              /* ensure number remains white */
+  font-weight: bold;
+}

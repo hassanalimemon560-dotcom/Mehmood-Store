@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mehmood AirPods Store</title>
+<link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<div class="top-bar">
+  <span>You can also order on WhatsApp: +92 370 6651729</span>
+  <div class="top-options">
+    <a href="Login.html">Login</a> |
+    <a href="SignUp.html">Sign Up</a> |
+  </div>
+</div>
+
+<header class="main-header">
+  <div class="logo-section">
+    <img src="logo/images-removebg-preview.png" alt="Logo">
+    <h2>Mehmood Store</h2>
+  </div>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search AirPods...">
+    <button><i class="fa fa-search"></i></button>
+  </div>
+
+  <div class="cart-section" onclick="addToCart()">
+   <a href="Card.html" class="cart-btn">
+   🛒 Cart ( <span id="cart-count">0</span> )</a>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <a href="#">SALE</a>
+  <a href="#">AIRPODS</a>
+  <a href="#">EARBUDS</a>
+  <a href="#">ACCESSORIES</a>
+  <a href="#">BLOG</a>
+  <a href="#">CONTACT</a>
+</nav>
+<div class="product-container">
+
+  <div class="product-card">
+    <img src="https://www.buykarlo.pk/wp-content/uploads/2022/12/apple_airpods_pro_2_anc_hengxuan_wireless_bluetooth_earphone_active_noise_cancellation-scaled.jpeg" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgQpmA_0YPcCYVvBKUFeuLokTZEUkvt0MoA&s" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://airpods.pk/wp-content/uploads/2023/08/airpods-pro-black.webp" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+</div>
+</div>
+
+<div class="product-container">
+
+  <div class="product-card">
+    <img src="https://www.buykarlo.pk/wp-content/uploads/2022/12/apple_airpods_pro_2_anc_hengxuan_wireless_bluetooth_earphone_active_noise_cancellation-scaled.jpeg" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgQpmA_0YPcCYVvBKUFeuLokTZEUkvt0MoA&s" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://airpods.pk/wp-content/uploads/2023/08/airpods-pro-black.webp" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+</div>
+</div>
+
+<div class="product-container">
+
+  <div class="product-card">
+    <img src="https://www.buykarlo.pk/wp-content/uploads/2022/12/apple_airpods_pro_2_anc_hengxuan_wireless_bluetooth_earphone_active_noise_cancellation-scaled.jpeg" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgQpmA_0YPcCYVvBKUFeuLokTZEUkvt0MoA&s" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://airpods.pk/wp-content/uploads/2023/08/airpods-pro-black.webp" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+</div>
+</div>
+
+<div class="product-container">
+
+  <div class="product-card">
+    <img src="https://www.buykarlo.pk/wp-content/uploads/2022/12/apple_airpods_pro_2_anc_hengxuan_wireless_bluetooth_earphone_active_noise_cancellation-scaled.jpeg" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgQpmA_0YPcCYVvBKUFeuLokTZEUkvt0MoA&s" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://airpods.pk/wp-content/uploads/2023/08/airpods-pro-black.webp" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+</div>
+</div>
+
+<div class="product-container">
+
+  <div class="product-card">
+    <img src="https://www.buykarlo.pk/wp-content/uploads/2022/12/apple_airpods_pro_2_anc_hengxuan_wireless_bluetooth_earphone_active_noise_cancellation-scaled.jpeg" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgQpmA_0YPcCYVvBKUFeuLokTZEUkvt0MoA&s" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://airpods.pk/wp-content/uploads/2023/08/airpods-pro-black.webp" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+</div>
+</div>
+
+<div class="product-container">
+
+  <div class="product-card">
+    <img src="https://www.buykarlo.pk/wp-content/uploads/2022/12/apple_airpods_pro_2_anc_hengxuan_wireless_bluetooth_earphone_active_noise_cancellation-scaled.jpeg" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgQpmA_0YPcCYVvBKUFeuLokTZEUkvt0MoA&s" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://airpods.pk/wp-content/uploads/2023/08/airpods-pro-black.webp" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+</div>
+</div>
+
+<div class="product-container">
+
+  <div class="product-card">
+    <img src="https://www.buykarlo.pk/wp-content/uploads/2022/12/apple_airpods_pro_2_anc_hengxuan_wireless_bluetooth_earphone_active_noise_cancellation-scaled.jpeg" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgQpmA_0YPcCYVvBKUFeuLokTZEUkvt0MoA&s" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://airpods.pk/wp-content/uploads/2023/08/airpods-pro-black.webp" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+</div>
+</div>
+
+<div class="product-container">
+
+  <div class="product-card">
+    <img src="https://www.buykarlo.pk/wp-content/uploads/2022/12/apple_airpods_pro_2_anc_hengxuan_wireless_bluetooth_earphone_active_noise_cancellation-scaled.jpeg" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgQpmA_0YPcCYVvBKUFeuLokTZEUkvt0MoA&s" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://airpods.pk/wp-content/uploads/2023/08/airpods-pro-black.webp" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+</div>
+</div>
+
+<div class="product-container">
+
+  <div class="product-card">
+    <img src="https://www.buykarlo.pk/wp-content/uploads/2022/12/apple_airpods_pro_2_anc_hengxuan_wireless_bluetooth_earphone_active_noise_cancellation-scaled.jpeg" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgQpmA_0YPcCYVvBKUFeuLokTZEUkvt0MoA&s" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://airpods.pk/wp-content/uploads/2023/08/airpods-pro-black.webp" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+</div>
+</div>
+
+<div class="product-container">
+
+  <div class="product-card">
+    <img src="https://www.buykarlo.pk/wp-content/uploads/2022/12/apple_airpods_pro_2_anc_hengxuan_wireless_bluetooth_earphone_active_noise_cancellation-scaled.jpeg" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgQpmA_0YPcCYVvBKUFeuLokTZEUkvt0MoA&s" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://airpods.pk/wp-content/uploads/2023/08/airpods-pro-black.webp" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+</div>
+</div>
+
+<div class="product-container">
+
+  <div class="product-card">
+    <img src="https://www.buykarlo.pk/wp-content/uploads/2022/12/apple_airpods_pro_2_anc_hengxuan_wireless_bluetooth_earphone_active_noise_cancellation-scaled.jpeg" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgQpmA_0YPcCYVvBKUFeuLokTZEUkvt0MoA&s" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://airpods.pk/wp-content/uploads/2023/08/airpods-pro-black.webp" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+</div>
+</div>
+
+<div class="product-container">
+
+  <div class="product-card">
+    <img src="https://www.buykarlo.pk/wp-content/uploads/2022/12/apple_airpods_pro_2_anc_hengxuan_wireless_bluetooth_earphone_active_noise_cancellation-scaled.jpeg" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgQpmA_0YPcCYVvBKUFeuLokTZEUkvt0MoA&s" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://airpods.pk/wp-content/uploads/2023/08/airpods-pro-black.webp" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+</div>
+</div>
+
+<div class="product-container">
+
+  <div class="product-card">
+    <img src="https://www.buykarlo.pk/wp-content/uploads/2022/12/apple_airpods_pro_2_anc_hengxuan_wireless_bluetooth_earphone_active_noise_cancellation-scaled.jpeg" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgQpmA_0YPcCYVvBKUFeuLokTZEUkvt0MoA&s" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://airpods.pk/wp-content/uploads/2023/08/airpods-pro-black.webp" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+</div>
+</div>
+
+<div class="product-container">
+
+  <div class="product-card">
+    <img src="https://www.buykarlo.pk/wp-content/uploads/2022/12/apple_airpods_pro_2_anc_hengxuan_wireless_bluetooth_earphone_active_noise_cancellation-scaled.jpeg" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgQpmA_0YPcCYVvBKUFeuLokTZEUkvt0MoA&s" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://airpods.pk/wp-content/uploads/2023/08/airpods-pro-black.webp" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+</div>
+</div>
+
+<div class="product-container">
+
+  <div class="product-card">
+    <img src="https://www.buykarlo.pk/wp-content/uploads/2022/12/apple_airpods_pro_2_anc_hengxuan_wireless_bluetooth_earphone_active_noise_cancellation-scaled.jpeg" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgQpmA_0YPcCYVvBKUFeuLokTZEUkvt0MoA&s" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://airpods.pk/wp-content/uploads/2023/08/airpods-pro-black.webp" alt="Airpods Pro">
+    <h3>Airpods Pro 2</h3>
+    <p class="price">Rs. 500</p>
+    <button onclick="addToCart('Airpods Pro 2', 500, 'airpods.jpg')">Add to Cart</button>
+  </div>
+</div>
+</div>
+<script src="./dashboard.js"></script>
+</body>
+</html>

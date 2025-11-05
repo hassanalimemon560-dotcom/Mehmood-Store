@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0b0b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  background: #111;
+  padding: 30px;
+  width: 350px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #1e90ff;
+}
+
+.container h2 {
+  color: #1e90ff;
+}
+
+input {
+  width: 91%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: none;
+  background: #222;
+  color: white;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid #1e90ff;
+}
+
+/* Password field + Eye icon */
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: 83%;
+  padding-right: 40px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #1e90ff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #1e90ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0073e6;
+}
+
+.login-text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login-text a {
+  color: #1e90ff;
+  text-decoration: none;
+}
